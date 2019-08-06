@@ -2,6 +2,8 @@
 
 Tools for segmentation and feature extraction of Lossless derivative EEGIP London dataset.
 
+Copy this 'seg_sta_nois' folder to the 'eegip/london/derivatives/lossless/derivatives' folder. 
+
 Use EEGLAB with Matlab working directory set to:
 
 eegip/london/derivatives/lossless
