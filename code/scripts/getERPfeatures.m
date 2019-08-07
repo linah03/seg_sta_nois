@@ -103,7 +103,7 @@ for fi=1:length(c_fname);
     end
     
 
-    %100 to 219
+    %100 to 219 - P100
     t1_inds=find(EEG.times>=100 & EEG.times<=219);
     [t1_peak_p_amp,t1_peak_p_lat_ind]=max(ERP_r(:,t1_inds),[],2);    
     t1_peak_p_lat=[];
@@ -111,7 +111,7 @@ for fi=1:length(c_fname);
         t1_peak_p_lat(ai)=EEG.times(t1_inds(t1_peak_p_lat_ind(ai)));
     end
     
-    %220 to 319
+    %220 to 319 - N290
     t2_inds=find(EEG.times>=220 & EEG.times<=319);
     [t2_peak_n_amp,t2_peak_n_lat_ind]=min(ERP_r(:,t2_inds),[],2);    
     t2_peak_n_lat=[];
@@ -119,7 +119,7 @@ for fi=1:length(c_fname);
         t2_peak_n_lat(ai)=EEG.times(t2_inds(t2_peak_n_lat_ind(ai)));
     end
 
-    %320 to 540
+    %320 to 540 - P400
     t3_inds=find(EEG.times>=320 & EEG.times<=540);
     [t3_peak_p_amp,t3_peak_p_lat_ind]=max(ERP_r(:,t3_inds),[],2);    
     t3_peak_p_lat=[];
@@ -127,7 +127,7 @@ for fi=1:length(c_fname);
         t3_peak_p_lat(ai)=EEG.times(t3_inds(t3_peak_p_lat_ind(ai)));
     end
     
-    %541 to 789
+    %541 to 789 - LPC
     t4_inds=find(EEG.times>=541 & EEG.times<=789);
     [t4_peak_p_amp,t4_peak_p_lat_ind]=max(ERP_r(:,t4_inds),[],2);    
     t4_peak_p_lat=[];
